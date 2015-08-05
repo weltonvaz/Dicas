@@ -1,8 +1,19 @@
 #!/bin/python
 # -*- coding: utf-8 -*-
 
-num = float(input())
+import os
+os.system("clear")
 
-resto = num % 1
+valor = input()
 
-print(resto)
+lista = []
+wert = []
+
+for x in range(1,int(valor)+1):
+	valores = input()
+	a,b = valores.split()
+	wert.append([x,int(a),int(b)])
+
+lista.extend(wert)
+
+print(lista)
