@@ -11,6 +11,8 @@ deste evento."""
 import os
 os.system('clear')
 
+from datetime import datetime
+
 diaN = int(input("Dia "))
 horaN =  input()
 diaF = int(input("Dia "))
@@ -19,12 +21,15 @@ horaF =  input()
 hhN,mmN,ssN = horaN.split(":")
 hhF,mmF,ssF = horaF.split(":")
 
-W = int(diaF) - int(diaN)
-X = int(hhF) - int(hhN)
-Y = int(mmF) - int(mmN)
-Z = int(ssF) - int(ssN)
+data1 = datetime(2015,8,int(diaN),int(hhN),int(mmN),int(ssN))
+data2 = datetime(2015,8,int(diaF),int(hhF),int(mmF),int(ssF))
 
-print("%d dia(s)" %W)
-print("%d hora(s)" %X)
-print("%d minuto(s)" %Y)
-print("%d segundo(s)" %Z)
+difdata = data2 - data1
+datatt = '{0}:{2}'.format(*str(difdata).split())
+
+W,X,Y,Z = datatt.split(":")
+
+print("%s dia(s)" %int(W))
+print("%s hora(s)" %int(X))
+print("%s minuto(s)" %int(Y))
+print("%s segundo(s)" %int(Z))
