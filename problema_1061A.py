@@ -13,23 +13,25 @@ os.system('clear')
 
 from datetime import datetime
 
-diaN = int(input("Dia "))
-horaN =  input()
-diaF = int(input("Dia "))
-horaF =  input()
+diaN = input()
+horaN = input()
+diaF = input()
+horaF = input()
 
+diasN,ddN = diaN.split(" ")
+diasF,ddF = diaF.split(" ")
 hhN,mmN,ssN = horaN.split(":")
 hhF,mmF,ssF = horaF.split(":")
 
-data1 = datetime(2015,8,int(diaN),int(hhN),int(mmN),int(ssN))
-data2 = datetime(2015,8,int(diaF),int(hhF),int(mmF),int(ssF))
-
+data1 = datetime(2015, 8, int(ddN),int(hhN),int(mmN),int(ssN))
+data2 = datetime(2015, 8, int(ddF),int(hhF),int(mmF),int(ssF))
 difdata = data2 - data1
 datatt = '{0}:{2}'.format(*str(difdata).split())
 
-W,X,Y,Z = datatt.split(":")
+dia,hora,minuto,segundo = datatt.split(":")
 
-print("%s dia(s)" %int(W))
-print("%s hora(s)" %int(X))
-print("%s minuto(s)" %int(Y))
-print("%s segundo(s)" %int(Z))
+print("%d dia(s)" % int(dia))
+print("%d hora(s)" % int(hora))
+print("%d minuto(s)" % int(minuto))
+print("%d segundo(s)" % int(segundo))
+
