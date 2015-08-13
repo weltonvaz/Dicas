@@ -7,6 +7,22 @@
 import os
 os.system('clear')
 
+<<<<<<< HEAD
+wert = input()
+
+a = (input())
+b = (input())
+c = int(input())
+d = int(input())
+e = int(input())
+f = int(input())
+
+if wert > 0:
+    x += 1
+
+print("%d valores positivos" % x)
+
+=======
 a = input()
 b = input()
 c = input()
@@ -21,3 +37,4 @@ for x in lista:
     if float(x) < 0:
         n-=1
 print("%d valores positivos" %(n))
+>>>>>>> 038231325b700bf2d31304fba365323a7dd9c8e8

@@ -26,12 +26,14 @@ hhF,mmF,ssF = horaF.split(":")
 data1 = datetime(2015, 8, int(ddN),int(hhN),int(mmN),int(ssN))
 data2 = datetime(2015, 8, int(ddF),int(hhF),int(mmF),int(ssF))
 difdata = data2 - data1
-datatt = '{0}:{2}'.format(*str(difdata).split())
+datatt = '{0}:{4}'.format(*str(difdata).split())
 
-dia,hora,minuto,segundo = datatt.split(":")
+print(datatt)
+
+"""dia,hora,minuto,segundo = datatt.split(":")
 
 print("%d dia(s)" % int(dia))
 print("%d hora(s)" % int(hora))
 print("%d minuto(s)" % int(minuto))
-print("%d segundo(s)" % int(segundo))
+print("%d segundo(s)" % int(segundo))"""
 
