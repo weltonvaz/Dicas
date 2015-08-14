@@ -1,20 +1,21 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
+import datetime
+import time
 
-#("***Calcular Tempo de Evento***")
- 
-import os
-os.system('clear')
+diaN = input()
+horaN = input()
+diaF = input()
+horaF = input()
 
-totalSegundos = int(input("Informe o tempo em segundos -"))
+diasN,ddN = diaN.split(" ")
+diasF,ddF = diaF.split(" ")
+hhN,mmN,ssN = horaN.split(" : ")
+hhF,mmF,ssF = horaF.split(" : ")
 
-horas = totalSegundos / 360
+print(hhN,mmN,ssN)
+print(hhF,mmF,ssF)
 
-sobraHoras = totalSegundos - (horas * 360)
+s = str(ddN+"/8/2015 "+(hhN+":"+mmN+":"+ssN))
+t = str(ddF+"/8/2015 "+(hhF+":"+mmF+":"+ssF).rstrip(" "))
 
-minutos = sobraHoras / 60
-
-segundos = sobraHoras - (minutos * 60)
-
-print("Tempo do Evento: ", horas, "h", minutos, "min", segundos, "seg")
-
+print(s)
+print(t)

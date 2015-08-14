@@ -11,6 +11,8 @@ deste evento."""
 import os
 os.system('clear')
 
+import datetime
+
 diaN = input()
 horaN = input()
 diaF = input()
@@ -21,37 +23,20 @@ diasF,ddF = diaF.split(" ")
 hhN,mmN,ssN = horaN.split(":")
 hhF,mmF,ssF = horaF.split(":")
 
-morgemN = int(ddN)
-morgemF = int(ddF)
-dia, hora, minutos, segundos = 0
+s = str((ddN+"/8/2015 ")+(hhN.strip()+":"+mmN.strip()+":"+ssN.strip()))
+t = str((ddF+"/8/2015 ")+(hhF.strip()+":"+mmF.strip()+":"+ssF.strip()))
 
-# TRABALHANDO COM DIAS
-dia = morgemF - morgemN
-if dia < 0:
-	dia = 0
-	hora = hora + 24
+date1 = int(datetime.datetime.strptime(s, '%d/%m/%Y %H:%M:%S').strftime("%s"))
+date2 = int(datetime.datetime.strptime(t, '%d/%m/%Y %H:%M:%S').strftime("%s"))
 
-# TRABALHANDO COM HORAS
-hora = (int(hhF) - int(hhN)) + hora
-if hora < 0:
-	hora = 0
-elif hora > 24:
-	hora = 0
-		
-	
-# TRABALHANDO COM MINUTOS
-minutos = (int(mmF) - int(mmN)) 
-if minutos >= 60:
-	minutos == 0
-	segundos = segundos + 60
-else minutos > 0:
-	minutos == 0
-	
-# TRABALHANDO COM SEGUNDOS
-segundos = (int(ssF) - int(ssN))
-	
-print("%d dia(s)" % dia)
-print("%d hora(s)" % hora)
-print("%d minuto(s)" % minutos)
-print("%d segundo(s)" % segundos)
+difdate = date2 - date1
 
+W = divmod(difdate,86400)
+X = divmod(W[1],3600)
+Y = divmod(X[1],60)
+Z = divmod(Y[1],60)
+
+print(W[0],"dia(s)")
+print(X[0],"hora(s)")
+print(X[0],"minuto(s)")
+print(Z[0],"segundo(s)")
