@@ -23,20 +23,20 @@ diasF,ddF = diaF.split(" ")
 hhN,mmN,ssN = horaN.split(":")
 hhF,mmF,ssF = horaF.split(":")
 
-s = str((ddN+"/8/2015 ")+(hhN.strip()+":"+mmN.strip()+":"+ssN.strip()))
-t = str((ddF+"/8/2015 ")+(hhF.strip()+":"+mmF.strip()+":"+ssF.strip()))
+s = str((ddN+"/4/2015 ")+(hhN.strip()+":"+mmN.strip()+":"+ssN.strip()))
+t = str((ddF+"/4/2015 ")+(hhF.strip()+":"+mmF.strip()+":"+ssF.strip()))
 
 date1 = int(datetime.datetime.strptime(s, '%d/%m/%Y %H:%M:%S').strftime("%s"))
 date2 = int(datetime.datetime.strptime(t, '%d/%m/%Y %H:%M:%S').strftime("%s"))
 
 difdate = date2 - date1
 
-W = divmod(difdate,86400)
-X = divmod(W[1],3600)
-Y = divmod(X[1],60)
-Z = divmod(Y[1],60)
+dia = divmod(difdate,86400)
+hora = divmod(dia[1],3600)
+minuto = divmod(hora[1],60)
+segundo = divmod(minuto[1],60)
 
-print(W[0],"dia(s)")
-print(X[0],"hora(s)")
-print(X[0],"minuto(s)")
-print(Z[0],"segundo(s)")
+print("%s dia(s)" %str(dia[0]))
+print("%s hora(s)" %str(hora[0]))
+print("%s minuto(s)" %str(minuto[0]))
+print("%s segundo(s)" %str(segundo[1]))
