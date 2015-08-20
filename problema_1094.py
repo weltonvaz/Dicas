@@ -8,7 +8,7 @@ no laboratório e o percentual de cada tipo de cobaia utilizada. Este laboratór
 em especial utiliza três tipos de cobaias: sapos, ratos e coelhos. Para obter
 estas informações, ela sabe exatamente o número de experimentos que foram
 realizados, o tipo de cobaia utilizada e a quantidade de cobaias utilizadas em
-cada experimento."""
+cada experimento. """
 
 import os
 os.system('clear')

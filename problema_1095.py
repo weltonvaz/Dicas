@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 """Você deve fazer um programa que apresente a sequencia conforme o exemplo
- abaixo."""
+ abaixo. """
 
 import os
 os.system('clear')
