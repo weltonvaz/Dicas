@@ -6,13 +6,12 @@
 import os
 os.system('clear')
 
-n = 1.0
+n = 0.0
 
-for i in range(0,21,2):
+for i in range(0,3):
     for j in range(1,4):
         if i == 0.0:
-            print("I=%d J=%d" %(i,j))
-        elif i == 1.0:
-            print("I=%d J=%d" %(int(i),j))
+            print(i,j)
         else:
-            print("I=%.1f J=%s" %(i/10.0,(j+(i/10.0))))
+            print(i+n,j+n)
+    n += 0.2
