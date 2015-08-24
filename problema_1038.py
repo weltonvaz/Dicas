@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-'''Com base na tabela abaixo, escreva um programa que leia o código de 
-um item e a quantidade deste item. 
+'''Com base na tabela abaixo, escreva um programa que leia o código de
+um item e a quantidade deste item.
 A seguir, calcule e mostre o valor da conta a pagar.'''
 
 import os
@@ -25,5 +25,5 @@ elif a == "5":
 	preis = float(b) * 1.50
 else:
 	print("Código não existe")
-	
+
 print("Total: R$ %.2f" %preis)
