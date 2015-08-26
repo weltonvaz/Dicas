@@ -10,12 +10,12 @@ os.system('clear')
 
 N = int(input())
 for a in range(0,N):
-    wert = int(input())
+    wert = input()
     X,Y = wert.split()
     x = int(X)
     y = int(Y)
     if y == 0:
         print("divisao impossivel")
     else:
-        divisao = X / Y
+        divisao = x / y
         print("%.1f" %divisao)
