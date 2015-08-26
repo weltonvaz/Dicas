@@ -7,12 +7,20 @@ quadrante ao qual pertence o ponto, ou se está sobre um dos eixos
 cartesianos ou na origem (x = y = 0).'''
 
 punkt = input()
+<<<<<<< HEAD
 
+=======
+ 
+>>>>>>> 261f8e1fb5949d284dc88e03c14fc076ec8b61a7
 X,Y = punkt.split()
-
+ 
 x = float(X)
 y = float(Y)
+<<<<<<< HEAD
 
+=======
+ 
+>>>>>>> 261f8e1fb5949d284dc88e03c14fc076ec8b61a7
 if (x == 0 and y == 0):
     print("Origem")
 elif (x == 0):
