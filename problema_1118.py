@@ -8,19 +8,33 @@ aluno. Calcule e imprima a média semestral. Faça com que o algoritmo só aceit
 
 import os
 os.system('clear')
+import sys
 
-while True:
-    x = float(input())
-    if x > 10 or x <= 0:
-        print("nota invalida")
+def pergunta():
+    answer = input("novo calculo (1-sim 2-nao)\n")
+    if answer == '1':
+        vnotas()
+        pergunta()
+    elif answer == '2':
+        sys.exit()
     else:
-        break
-while True:
-    y = float(input())
-    if y > 10 or y <= 0:
-        print("nota invalida")
-    else:
-        break
+        pergunta()
 
-media = (x+y)/2
-print("media = %.2f" %media)
+def vnotas():
+    while True:
+        x = float(input())
+        if x > 10 or x <= 0:
+            print("nota invalida")
+        else:
+            break
+    while True:
+        y = float(input())
+        if y > 10 or y <= 0:
+            print("nota invalida")
+        else:
+            break
+    media = (x+y)/2
+    print("media = %.2f" %media)
+
+vnotas()
+pergunta()
