@@ -8,9 +8,14 @@ import os
 os.system('clear')
 
 N = int(input())
-
-for x in range(1,(N*4)+1):
-    if x % 4 == 0:
-        print("PUM")
-        continue
-    print(x,end=" ")
+for i in range(1,N+1):
+    a = 0
+    b = 0
+    c = 0
+    d = 0
+    a=i*i
+    b=i*i*i
+    print("%d %d %d" %(i,a,b))
+    c=i*i+1
+    d=i*i*i+1
+    print("%d %d %d" %(i,c,d))

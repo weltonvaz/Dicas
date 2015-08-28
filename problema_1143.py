@@ -12,4 +12,4 @@ import math
 N = int(input())
 
 for x in range(1,(N)+1):
-    print("%d %d %d \n" %(x,x**2,(pow(x,3))))
+    print("%d %d %d" %(x,x**2,(pow(x,3))))
