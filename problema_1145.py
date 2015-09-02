@@ -11,7 +11,8 @@ N = input()
 
 X,Y = N.split()
 
-for i in range(1,int(Y)+1,int(X)):
-    print(i,end=" ")
-    for z in range(int(X)+1,int(X)+2):
-        print(z)
+for i in range(1,int(Y)+1):
+    if i % int(X) == 0:
+        print("%d" %i)
+    else:
+        print("%d" %i,end=" ")
