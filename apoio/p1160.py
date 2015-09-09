@@ -8,12 +8,14 @@ os.system('clear')
 
 import math
 
-popA, popB, anos = 90000, 120000, 0
-cresA, cresB = 5.5, 3.5
-while (popA < popB):
+popA, popB, anos = 100, 150, 0
+cresA, cresB = 1.0, 0
+while (popB >= popA):
     anos += 1
-    popA = math.fabs(popA + (popA * (cresA/100)))
-    popB = math.fabs(popB + (popB * (cresB/100)))
+    popA = math.trunc(popA + (popA * (cresA/100)))
+    popB = math.trunc(popB + (popB * (cresB/100)))
+    print(popA,popB,anos)
+
 print("Após %i anos o país A ultrapassou o país B em número de habitantes." % anos)
 print("País A: %.0f" % popA)
 print("País B: %.0f" % popB)

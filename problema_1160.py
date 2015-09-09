@@ -16,18 +16,16 @@ nesta situação, a mensagem "Mais de 1 seculo."""
 import os
 os.system('clear')
 
-import math
-
 def bevolkerung(popA,popB,cresA,cresB):
     anos = 0
-    while (popA < popB):
+    while (popB >= popA):
             anos += 1
-            popA = math.fabs(popA + (popA * (cresA/100)))
-            popB = math.fabs(popB + (popB * (cresB/100)))
-    if anos > 100:
-        return "Mais de 1 seculo."
-    else:
+            popA = (popA + (popA * (cresA/100)))//1
+            popB = (popB + (popB * (cresB/100)))//1
+    if anos <= 100:
         return "%d anos." %anos
+    else:
+        return "Mais de 1 seculo."
 
 T = int(input())
 
