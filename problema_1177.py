@@ -9,7 +9,7 @@ import os
 os.system('clear')
 
 N = [0]
-n=0
+n = 0
 
 t = int(input())
 while t < 2 or t >= 51:
@@ -25,5 +25,3 @@ for i in range(1,1000):
 
 for z in range(0,1000):
     print("N[%d] = %d" %(z,N[z]))
-
-print(N)
