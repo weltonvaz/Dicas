@@ -1,4 +1,4 @@
-
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
 """Neste problema você deve ler um número, indicando uma linha da matriz na

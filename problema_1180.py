@@ -1,4 +1,4 @@
-
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
 """Faça um programa que leia um valor N. Este N será o tamanho de um vetor X[N].

@@ -1,4 +1,4 @@
-
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
 """Faça um programa que leia um valor T e preencha um vetor N[1000] com a
