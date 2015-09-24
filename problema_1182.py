@@ -11,21 +11,20 @@ considerados na operação."""
 import os
 os.system('clear')
 
-def soma(N):
+def soma():
 	somam = 0
 	matriz = []
 	for i in range(0,12):
 		for j in range(0,12):
 			M = float(input())
 			matriz.append(M)
-			if i == N:
+			if j < i:
 				somam += M
 	return somam
 
-N = int(input())
 T = input()
 if (T == 'S'):
-	print("%.1f" %soma(N))
+	print("%.1f" %soma())
 else:
-	media = soma(N)
-	print("%.1f" %(media/12.0))
+	media = soma()
+	print("%.1f" %(media/66.0))
