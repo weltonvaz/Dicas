@@ -27,3 +27,6 @@ while user != 0:
         for item in i:
             print('  %i' % item,end="")
         print()
+    print()
+      
+        
