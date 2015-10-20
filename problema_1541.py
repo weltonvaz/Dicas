@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 
 """ Considere que ele tenha por exemplo, um projeto para construir uma casa de 8
 metros por 10 metros e a legislação do município permite construir no máximo de

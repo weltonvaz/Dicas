@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 
 """ O Brasil é o país sede da copa esse ano. Porém, há muitas pessoas
 protestando contra o governo. Em redes sociais é possível ver pessoas afirmando

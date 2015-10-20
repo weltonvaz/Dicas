@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
 import os
 os.system("clear")
 
@@ -28,5 +31,3 @@ while user != 0:
             print('  %i' % item,end="")
         print()
     print()
-      
-        
