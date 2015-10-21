@@ -11,21 +11,29 @@ velocidade:"""
 import os
 os.system("clear")
 
-import sys
-
 def maior(lista):
-    velox = lista[1::2]
-    indix = velox.index(max(lista[1::2]))
-    return indix + 1
+    velox = max(lista)
+    if velox < 10:
+        return 1
+    elif velox >= 10 and velox < 20:
+        return 2
+    else:
+        return 3
 
-L = int(input())
-vi = []
-vo = []
+while True:
+    try:
+        L = int(input())
+        vi = []
+        vo = []
 
-wert = input()
-vi = wert.split()
+        wert = input()
+        vi = wert.split()
 
-for x in vi:
-    vo.append(int(x))
+        for x in range(0,L):
+            vo.append(int(vi[x]))
 
-print(maior(vo))
+        print(maior(vo))
+    except EOFError:
+        break
+    except ValueError:
+        break
